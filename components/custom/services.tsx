@@ -5,7 +5,7 @@ export const Services = () => {
       <section id="conference-tracks" className="py-16 bg-white text-center">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Conference Tracks</h2>
-          <p className="text-lg text-gray-600 mb-8">Explore AI’s role across various disciplines through these focused tracks.</p>
+          <p className="text-lg text-gray-600 mb-8">Explore AI&apos;s role across various disciplines through these focused tracks.</p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
             <div className="bg-gray-100 p-6 rounded-lg shadow-md">
@@ -53,19 +53,19 @@ export const Services = () => {
           <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="flex items-start">
               <span className="text-green-500 text-2xl mr-3">✔</span>
-              <p className="text-lg text-gray-700"><strong>AI Researchers & Academicians</strong> – Stay updated on the latest AI innovations.</p>
+              <p className="text-lg text-gray-700"><strong>AI Researchers & Academicians</strong> - Stay updated on the latest AI innovations.</p>
             </div>
             <div className="flex items-start">
               <span className="text-green-500 text-2xl mr-3">✔</span>
-              <p className="text-lg text-gray-700"><strong>Industry Professionals & Innovators</strong> – Discover AI-driven solutions for your field.</p>
+              <p className="text-lg text-gray-700"><strong>Industry Professionals & Innovators</strong> - Discover AI-driven solutions for your field.</p>
             </div>
             <div className="flex items-start">
               <span className="text-green-500 text-2xl mr-3">✔</span>
-              <p className="text-lg text-gray-700"><strong>Policymakers & Government Officials</strong> – Understand AI's impact on governance and policy.</p>
+              <p className="text-lg text-gray-700"><strong>Policymakers & Government Officials</strong> - Understand AI's impact on governance and policy.</p>
             </div>
             <div className="flex items-start">
               <span className="text-green-500 text-2xl mr-3">✔</span>
-              <p className="text-lg text-gray-700"><strong>Students & AI Enthusiasts</strong> – Explore AI career paths and research opportunities.</p>
+              <p className="text-lg text-gray-700"><strong>Students & AI Enthusiasts</strong> - Explore AI career paths and research opportunities.</p>
             </div>
           </div>
         </div>
