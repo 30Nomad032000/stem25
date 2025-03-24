@@ -36,7 +36,7 @@ export const Services = () => {
           <ul className="text-lg text-gray-700 space-y-4 text-left max-w-2xl mx-auto">
             <li>✅ Selected papers will be <strong>published</strong> with an ISBN & DOI.</li>
             <li>✅ Additional options for <strong>Scopus/UGC CARE</strong> journal publication.</li>
-            <li>✅ Contribute to shaping AI's future with impactful research.</li>
+            <li>✅ Contribute to shaping AI&apos;s future with impactful research.</li>
           </ul>
 
           <a href="https://forms.gle/oeyBYV2TcFJXDdHf8" className="mt-6 inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition">
@@ -61,7 +61,7 @@ export const Services = () => {
             </div>
             <div className="flex items-start">
               <span className="text-green-500 text-2xl mr-3">✔</span>
-              <p className="text-lg text-gray-700"><strong>Policymakers & Government Officials</strong> - Understand AI's impact on governance and policy.</p>
+              <p className="text-lg text-gray-700"><strong>Policymakers & Government Officials</strong> - Understand AI&apos;s impact on governance and policy.</p>
             </div>
             <div className="flex items-start">
               <span className="text-green-500 text-2xl mr-3">✔</span>
