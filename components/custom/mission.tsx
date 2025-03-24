@@ -3,7 +3,7 @@ import { CustomFontText } from "../ui/customFontText";
 
 export const Mission = () => {
   return (
-    <div className="px-[50px] md:px-[100px] lg:px-[50px] xl:px-[200px] py-10 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8">
+    <div className="px-[50px] py-10 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8">
       <div className="col-span-1 lg:col-span-2 flex items-center">
         <Image
           src="/mission.jpeg"
@@ -63,22 +63,7 @@ export const Mission = () => {
                   solutions.
                 </span>
               </li>
-              <li className="flex items-start">
-                <span className="text-green-500 text-xl mr-2">✔</span>
-                <span>
-                  <strong>Empower the Next Generation</strong> – Inspire
-                  students, scholars, and innovators to contribute to AI’s
-                  evolving landscape.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-500 text-xl mr-2">✔</span>
-                <span>
-                  <strong>Build Industry-Academia Partnerships</strong> –
-                  Strengthen collaboration to translate AI research into
-                  impactful solutions.
-                </span>
-              </li>
+
             </ul>
           </div>
 

@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="px-[50px] md:px-[100px] lg:px-[50px] xl:px-[200px] py-10 h-fit grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8">
+    <div className="px-[50px] py-10 h-fit grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8">
       <div className="h-full flex flex-col items-center lg:items-start justify-center gap-8">
-        <div className="bg-[#39A9DB] w-fit px-4 py-1 rounded-full text-white text-[24px] lg:text-[32px]">
-          <CustomFontText>AI-STEM Conference 2025</CustomFontText>
+        <div className="bg-[#39A9DB] w-fit px-4 py-1 rounded-full text-white lg:text-[25px]">
+          <CustomFontText >AI-STEM Conference 2025</CustomFontText>
         </div>
         <div className="flex flex-col gap-2 items-end">
-          <div className="text-[37px] font-semibold text-[#172540]">
-            Exploring the World of AI: <br />
+          <div className="text-[23px] font-semibold text-[#172540]">
+            <span className="text-nowrap"> Exploring the World of AI: </span><br />
             Trends & Applications
           </div>
           <Image

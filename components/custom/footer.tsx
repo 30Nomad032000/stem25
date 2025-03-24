@@ -6,6 +6,12 @@ export const Footer = () => {
     <div className="flex flex-col gap-0 pt-[100px]">
       <div className="bg-[#172540] px-[25px] md:px-[100px] lg:px-[200px] py-12 grid grid-cols-1 lg:grid-cols-6 border-b border-white gap-y-8">
         <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-24 text-white text-base font-normal">
+          <div>
+            <Image src="/logoNoBg.png" alt="logo" width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "auto" }} />
+          </div>
           <div className="flex flex-col gap-4">
             <div className="underline text-xl">CONTACT US</div>
             <div className="flex gap-4 items-center">
@@ -24,8 +30,8 @@ export const Footer = () => {
               />
               aistem2025@adishankara.ac.in
             </div>
-            <div className="flex gap-4 items-center text-nowrap">
-              🚀 Join us at AI-STEM 2025 and shape the future of AI!
+            <div className="flex gap-4 items-center text-nowrap text-center">
+              🚀 Join us at AI-STEM 2025 and <br /> shape the future of AI!
             </div>
           </div>
         </div>

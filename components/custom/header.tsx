@@ -11,7 +11,7 @@ export const Header = () => {
           className="w-[95px] h-[95px]"
           width={100}
           height={100}
-          alt="Trident Rentals Logo"
+          alt="Logo"
         />
         <div className="text-[37px]  font-semibold text-[#1C77C3]">Stem 25</div>
       </div>

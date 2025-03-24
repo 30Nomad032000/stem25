@@ -5,6 +5,7 @@ import { Hero } from "@/components/custom/hero";
 import { Mission } from "@/components/custom/mission";
 import { Contact } from "@/components/custom/contact";
 import { Footer } from "@/components/custom/footer";
+import { Services } from "@/components/custom/services";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Mission />
       <Choose />
       <Contact />
-
+      <Services />
       <Footer />
     </>
   );
