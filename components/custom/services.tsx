@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const Services = () => {
   return (
     <div className="px-[25px] md:px-[100px] lg:px-[50px] xl:px-[200px] py-12 flex flex-col justify-center items-center gap-14">
