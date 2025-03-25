@@ -1,29 +1,111 @@
+'use client';
+
+import { useState } from "react";
+
+interface Track {
+  title: string;
+  description: string;
+  themes: string[];
+}
+
 export const Services = () => {
+  const [selectedTrack, setSelectedTrack] = useState<Track | null>(null);
+  const tracks: Track[] = [
+    {
+      title: "🔬 Basic Sciences & Humanities",
+      description: "AI applications in scientific research, sustainability, education, and cognitive sciences.",
+      themes: [
+        "AI in Scientific Research and Discovery",
+        "AI for Sustainable Development and Environmental Science",
+        "AI in Mathematical Modelling & Simulation",
+        "AI in Language Processing and Linguistics",
+        "AI in Social Sciences and Behavioral Analysis",
+        "AI for Education and Learning Technologies",
+        "AI in Healthcare and Biomedical Sciences",
+        "AI for Economic Modeling and Policy Analysis",
+        "AI in Cognitive Science and Human-Computer Interaction",
+        "AI for Cultural Heritage and Digital Humanities"
+      ]
+    },
+    {
+      title: "📈 Business & Management",
+      description: "AI in business intelligence, decision-making, cybersecurity, and digital ecosystems.",
+      themes: [
+        "AI-Driven Decision Intelligence and Analytics",
+        "Hyper-automation and AI-enabled Business Processes",
+        "AI-Powered Customer Experience and Personalization",
+        "AI in Supply Chain Optimization and Logistics",
+        "AI for Cybersecurity and Risk Management",
+        "AI in Workforce Transformation and Automation",
+        "AI for Smart Business Models and Digital Ecosystems",
+        "AI in Sustainable Computing and Ethical AI Practices",
+        "AI Applications in Financial Technology and Investment Strategies",
+        "AI for Collaborative Workspaces and Intelligent Automation"
+      ]
+    },
+    {
+      title: "💻 Computer Applications",
+      description: "Machine learning, deep learning, blockchain, big data, and generative AI.",
+      themes: [
+        "Data Science and Predictive Analytics in AI",
+        "Machine Learning Algorithms and Applications",
+        "Deep Learning Innovations and Challenges",
+        "Big Data Analytics and AI-driven Insights",
+        "Quantum Computing for AI and Machine Learning",
+        "AI for Cybersecurity and Secure Systems",
+        "Blockchain and AI: Convergence and Applications",
+        "Generative AI: Models, Creativity, and Ethics",
+        "Reinforcement Learning and Autonomous Systems",
+        "Explainable AI and Trustworthy Machine Learning"
+      ]
+    }
+  ];
   return (
     <div className="px-[25px] md:px-[100px] lg:px-[50px] xl:px-[200px] py-12 flex flex-col justify-center items-center gap-14">
 
       <section id="conference-tracks" className="py-16 bg-white text-center">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Conference Tracks</h2>
-          <p className="text-lg text-gray-600 mb-8">Explore AI&apos;s role across various disciplines through these focused tracks.</p>
+          <p className="text-lg text-gray-600 mb-8">
+            Explore AI&apos;s role across various disciplines through these focused tracks.
+          </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">🔬 Basic Sciences & Humanities</h3>
-              <p className="text-gray-600">AI applications in scientific research, sustainability, education, and cognitive sciences.</p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">📈 Business & Management</h3>
-              <p className="text-gray-600">AI in business intelligence, decision-making, cybersecurity, and digital ecosystems.</p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">💻 Computer Applications</h3>
-              <p className="text-gray-600">Machine learning, deep learning, blockchain, big data, and generative AI.</p>
-            </div>
+            {tracks.map((track, index) => (
+              <div
+                key={index}
+                onClick={() => setSelectedTrack(track)}
+                className="bg-gray-100 p-6 rounded-lg shadow-md cursor-pointer hover:bg-gray-200 transition"
+              >
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">{track.title}</h3>
+                <p className="text-gray-600">{track.description}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
 
+        {/* Modal for Key Themes */}
+        {selectedTrack && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="bg-white rounded-lg shadow-lg p-6 max-w-lg w-full text-left">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">{selectedTrack.title}</h3>
+              <p className="text-gray-600 mb-4">{selectedTrack.description}</p>
+              <h4 className="text-lg font-semibold text-gray-700 mb-2">Key Themes:</h4>
+              <ul className="list-disc list-inside text-gray-600">
+                {selectedTrack.themes.map((theme, i) => (
+                  <li key={i}>{theme}</li>
+                ))}
+              </ul>
+              <button
+                onClick={() => setSelectedTrack(null)}
+                className="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+      </section>
 
       <section id="call-for-papers" className="py-16 bg-gray-100 text-center rounded-xl">
         <div className="max-w-4xl mx-auto px-6">
