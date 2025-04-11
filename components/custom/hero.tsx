@@ -38,10 +38,11 @@ export const Hero = () => {
             Shankara Institute of Engineering & Technology (ASIET), Kalady, is a
             premier institution offering value-added technological education,
             fostering professional excellence and ethical values. Established in
-            2001, ASIET is Kerala's first self-financing technological education
-            center, affiliated with APJ Abdul Kalam Technological University and
-            approved by AICTE. It offers UG, PG, and PhD courses with NBA
-            accreditation in multiple streams and holds an 'A' grade from NAAC.
+            2001, ASIET is Kerala&apos;s first self-financing technological
+            education center, affiliated with APJ Abdul Kalam Technological
+            University and approved by AICTE. It offers UG, PG, and PhD courses
+            with NBA accreditation in multiple streams and holds an
+            &lsquo;A&lsquo; grade from NAAC.
           </p>
         </div>
 
