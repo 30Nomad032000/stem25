@@ -8,6 +8,24 @@ import Services from "@/components/custom/services";
 import KeynoteSpeaker from "@/components/custom/keynoteSpearker";
 import { PaperTemplate } from "@/components/custom/paper";
 
+const speakers = [
+  {
+    name: "Dr. Saley Seetharaman",
+    title: "Assistant Professor",
+    university: "King Khalid University",
+    location: "Abha, Saudi Arabia",
+    email: "srami@kku.edu.sa",
+    imageSrc: "/speaker.jpeg",
+  },
+  {
+    name: "Sabu Augustine",
+    title: "Senior General Manager – Human Resources",
+    university: " Plant Lipids",
+    location: "Kerala",
+    imageSrc: "/speaker2.jpeg",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -16,16 +34,7 @@ export default function Home() {
       <About />
       <Objectives />
       <Choose />
-      <KeynoteSpeaker
-        name="Dr. Saley Seetharaman"
-        title="Assistant Professor"
-        university="King Khalid University"
-        location="Abha, Saudi Arabia"
-        poBox="61321"
-        email="srami@kku.edu.sa"
-        phone="+966 556339575"
-        imageSrc="/speaker.jpeg" // Replace with the actual path to the image
-      />
+      <KeynoteSpeaker speakers={speakers} />
 
       <Services />
       <PaperTemplate />
