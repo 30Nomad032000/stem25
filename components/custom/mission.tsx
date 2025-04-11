@@ -30,7 +30,7 @@ export const Mission = () => {
         </div>
         <div className="max-w-4xl mx-auto px-2">
           <p className="text-lg text-gray-600 mb-8">
-            At <span className="font-semibold">AI-STEM Conference 2025</span>,
+            At <span className="font-semibold">ICEAMT Conference 2025</span>,
             our mission is to{" "}
             <span className="italic">
               bridge the gap between AI research and real-world applications
@@ -63,7 +63,6 @@ export const Mission = () => {
                   solutions.
                 </span>
               </li>
-
             </ul>
           </div>
 

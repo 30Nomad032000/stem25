@@ -1,18 +1,17 @@
 import { Button } from "../ui/button";
-import { CustomFontText } from "../ui/customFontText";
 import Image from "next/image";
 
 export const Hero = () => {
   return (
     <div className="px-[50px] py-10 h-fit grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8">
       <div className="h-full flex flex-col items-center lg:items-start justify-center gap-8">
-        <div className="bg-[#39A9DB] w-fit px-4 py-1 rounded-full text-white lg:text-[25px]">
-          <CustomFontText >AI-STEM Conference 2025</CustomFontText>
-        </div>
-        <div className="flex flex-col gap-2 items-end">
-          <div className="text-[23px] font-semibold text-[#172540]">
-            <span className="text-nowrap"> Exploring the World of AI: </span><br />
-            Trends & Applications
+        <div className="flex flex-col gap-2 items-center">
+          <div className="text-[23px] font-semibold text-[#172540] text-center">
+            <span className="">
+              International conference on Emerging trends in Applied
+              Science,Management, Technology-2025 <br />
+              (ICEAMT-2025)
+            </span>
           </div>
           <Image
             src="/underline1.svg"
