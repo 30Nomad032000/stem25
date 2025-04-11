@@ -5,7 +5,10 @@ export const Footer = () => {
   return (
     <div className="flex flex-col gap-0 pt-[100px]">
       <div className="bg-[#172540] px-[25px] md:px-[100px] lg:px-[200px] py-12 grid grid-cols-1 lg:grid-cols-6 border-b border-white gap-y-8">
-        <div className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-24 text-white text-base font-normal">
+        <div
+          className="col-span-1 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-24 text-white text-base font-normal"
+          id="contact"
+        >
           <div>
             <Image
               src="/logoNoBG.png"

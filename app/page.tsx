@@ -6,6 +6,7 @@ import { Objectives } from "@/components/custom/mission";
 import { Footer } from "@/components/custom/footer";
 import Services from "@/components/custom/services";
 import KeynoteSpeaker from "@/components/custom/keynoteSpearker";
+import { PaperTemplate } from "@/components/custom/paper";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       />
 
       <Services />
+      <PaperTemplate />
       <Footer />
     </>
   );

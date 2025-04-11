@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -47,7 +48,15 @@ export const Header = () => {
             </Button>
           </Link>
 
-          <Button className="bg-[#00CCFF] hover:bg-[#00CCFF] text-white px-6 py-2 text-sm md:text-base font-normal">
+          <Button
+            onClick={() => {
+              const section = document.getElementById("contact");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="bg-[#00CCFF] hover:bg-[#00CCFF] text-white px-6 py-2 text-sm md:text-base font-normal"
+          >
             Contact Us
           </Button>
         </div>

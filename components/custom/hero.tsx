@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
 
@@ -45,13 +46,14 @@ export const Hero = () => {
             &lsquo;A&lsquo; grade from NAAC.
           </p>
         </div>
-
-        <Button
-          variant="outline"
-          className="mt-4 px-8 py-3 border-2 text-[#003366] border-[#003366] hover:bg-[#003366] hover:text-white transition-all duration-200 font-medium rounded-md"
-        >
-          Learn More
-        </Button>
+        <Link href="https://forms.gle/oeyBYV2TcFJXDdHf8">
+          <Button
+            variant="outline"
+            className="mt-4 px-8 py-3 border-2 text-[#003366] border-[#003366] hover:bg-[#003366] hover:text-white transition-all duration-200 font-medium rounded-md"
+          >
+            Register Now
+          </Button>
+        </Link>
       </div>
 
       {/* Right: Hero Image */}
