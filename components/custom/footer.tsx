@@ -32,7 +32,7 @@ export const Footer = () => {
                 height={100}
                 width={100}
               />
-              aistem2025@adishankara.ac.in
+              iceamt@adishankara.ac.in
             </div>
             <div className="flex gap-4 items-center text-nowrap text-center">
               🚀 Join us at AI-STEM 2025 and <br /> shape the future of AI!
